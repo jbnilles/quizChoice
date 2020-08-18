@@ -10,6 +10,42 @@
   <title>Quiz of Choice</title>
 </head>
 <body>
-  
+  <div class= "container">
+    <div class="jumbotron">
+      <h1 class="display-4">Stress Test</h1>
+    </div>
+    <form id= "warningSigns">
+      <div class="form-group">
+        <label>Warning Signs</label><br>
+        <input type="checkbox" name="warningSigns" value="sleep">Loss of sleep<br>
+        <input type="checkbox" name="warningSigns" value="overwhelmed">Feeling overwhelmed<br>
+        <input type="checkbox" name="warningSigns" value="appetite">Loss of appetite or overeating<br>
+        <input type="checkbox" name="warningSigns" value="concentration">Lack of conentration<br>
+        <input type="checkbox" name="warningSigns" value="Anxiety">Anxiety<br>
+      </div>
+      <div class="form-group">
+        <label>Health symptoms</label><br>
+        <input type="checkbox" name="healthSymptoms" value="headaches">Headaches<br>
+        <input type="checkbox" name="healthSymptoms" value="muscle tension">Muscle tension<br>
+        <input type="checkbox" name="healthSymptoms" value="upset stomach">Upset stomach<br>
+        <input type="checkbox" name="healthSymptoms" value="insomnia">Insomnia<br>
+        <input type="checkbox" name="healthSymptoms" value="fatigue">Fatigue<br>
+      </div>
+      <div class="form-group">
+        
+        <label>Coping Methods</label><br>
+        <input type="checkbox" name="copingMethods" value="meditate" id="meditateLabel">
+        <label for="meditateLabel">Meditate</label><br>
+        
+          <input type="checkbox" name="copingMethods" value="manageTime"id="manageTime">
+          <label for="manageTime">Manage Time</label><br>
+        <input type="checkbox" name="copingMethods" value="Yoga">Yoga<br>
+        <input type="checkbox" name="copingMethods" value="massage">Getting a Massage<br>
+        <input type="checkbox" name="copingMethods" value="reading">Reading<br>
+      </div>
+      
+      <button type="submit" class="btn btn-outline-primary">Submit</button>
+    </form>
+  </div>
 </body>
 </html>
