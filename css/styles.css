@@ -10,3 +10,15 @@
 #stressQuiz{
   display: none;
 }
+#fortuneQuiz{
+  display: none;
+}
+#lowLuck{
+  display:none
+}
+#mediumLuck{
+  display:none;
+}
+#highLuck{
+  display: none;
+}

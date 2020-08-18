@@ -17,6 +17,33 @@ $(document).ready(function(){
     }
     
   });
+  $('#stressButton').click(function () {
+    $('#intro').hide();
+    $('#stressQuiz').show();
+
+  });
+  $('#fortuneButton').click(function () {
+    $('#intro').hide();
+    $('#fortuneQuiz').show();
+
+  });
+  $('#luckySigns').submit(function(){
+    event.preventDefault();
+    let numLucky = $("input:checkbox[name=Lucky]:checked").length;
+    let numUnLucky = $("input:checkbox[name=Unlucky]:checked").length;
+    $('#luckySigns').hide();
+    //alert(numWarningSigns + ', ' + numSymptoms + ', ' + numCoping);
+    if(numLucky - numUnLucky > 0){
+      $('#highLuck').show();
+    }
+    else if(numLucky - numUnLucky === 0){
+      $('#mediumLuck').show();
+    }
+    else {
+      $('#lowLuck').show();
+    }
+    
+  });
 
 
 });
